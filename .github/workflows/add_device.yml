@@ -30,4 +30,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Add device
-      run: echo "Adding device ${{ github.event.inputs.device_name }} with UDID: ${{ github.event.inputs.device_udid }}"
+      run: echo "Adding device ${{ github.event.inputs.device_name }} with UDID ${{ github.event.inputs.device_udid }}"
