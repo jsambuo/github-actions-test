@@ -13,7 +13,7 @@ on:
         description: 'Device name'
         # Input has to be provided for the workflow to run
         required: true
-      device_uuid:
+      device_udid:
         # Friendly description to be shown in the UI instead of 'device_udid'
         description: 'Device UDID'
         # Input has to be provided for the workflow to run
