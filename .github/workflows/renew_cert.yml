@@ -16,9 +16,8 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Install certbot
-      run: |
-        sudo apt-get update
-        apt-get install certbot
+      run: sudo apt-get update
+    - run: apt-get install certbot
     - name: Run certbot certificates
       run: certbot certificates
     - run: certbot certonly --manual
