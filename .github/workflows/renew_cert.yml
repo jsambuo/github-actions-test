@@ -15,9 +15,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Install certbot
-      run: sudo apt-get update
-    - run: apt-get install certbot
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install certbot
     - name: Run certbot certificates
-      run: certbot certificates
-    - run: certbot certonly --manual
+      run: sudo certbot certificates
+    - run: sudo certbot certonly --manual
