@@ -21,4 +21,4 @@ jobs:
         sudo apt-get install certbot
     - name: Run certbot certificates
       run: sudo certbot certificates
-    - run: certbot certonly --manual
+    - run: sudo certbot certonly --manual
