@@ -20,4 +20,4 @@ jobs:
         sudo apt-get update
         sudo apt-get install certbot
     - name: Run certbot certificates
-      run: certbot certificates
+      run: sudo certbot certificates
