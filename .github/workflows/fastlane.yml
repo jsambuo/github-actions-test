@@ -1,5 +1,10 @@
 name: Run fastlane
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      myname:
+        description: 'My Name'
+        required: true
 jobs:
   lane:
     runs-on: macos-latest
@@ -8,4 +13,4 @@ jobs:
     - uses: maierj/fastlane-action@v2.1.0
       with:
         lane: 'custom_lane'
-        options: '{ "do_something": true }'
+        options: '{ "do_something": "${{ github.event.inputs.myname }}" }'
