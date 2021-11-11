@@ -29,4 +29,5 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }} ${{ github.workspace }}"
     - run: echo "Hello" > myfile
+    - run: sudo chmod 600 myfile
     - run: ls -la
