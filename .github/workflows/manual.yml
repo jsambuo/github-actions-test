@@ -31,4 +31,7 @@ jobs:
     - run: echo "Hello" > myfile
     - run: sudo chmod 600 myfile
     - run: ls -la
-    - run: ls -la ~/.ssh
+    - run: |
+      export JIMMY_BLAH=aoeu
+      echo $JIMMY_BLAH
+    - run: echo $JIMMY_BLAH
