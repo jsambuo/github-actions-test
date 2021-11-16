@@ -32,6 +32,6 @@ jobs:
     - run: sudo chmod 600 myfile
     - run: ls -la
     - run: |
-      export JIMMY_BLAH=aoeu
-      echo $JIMMY_BLAH
+        export JIMMY_BLAH=aoeu
+        echo $JIMMY_BLAH
     - run: echo $JIMMY_BLAH
